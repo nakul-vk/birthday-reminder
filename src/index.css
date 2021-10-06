@@ -1,13 +1,60 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --main-font: "Roboto", sans-serif;
+  --background: #f28ab2;
+  --card-background: #ffff;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--main-font);
+  background-color: var(--background);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  display: grid;
+  background-color: var(--card-background);
+  width: 350px;
+  border-radius: 5px;
+  box-shadow: 4px 3px 20px -1px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 4px 3px 20px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 4px 3px 20px -1px rgba(0, 0, 0, 0.75);
+}
+#heading {
+  color: grey;
+  margin: 20px 20px;
+  font-weight: lighter;
+}
+.person {
+  display: flex;
+  align-items: center;
+  margin: 10px 20px;
+}
+.propic {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+}
+.info {
+  margin-left: 15px;
+}
+.btn {
+  margin: 20px auto;
+  background-color: var(--background);
+  color: var(--card-background);
+  border: none;
+  border-radius: 5px;
+  width: 120px;
+  height: 2rem;
+  cursor: pointer;
 }
